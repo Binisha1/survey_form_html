@@ -1,0 +1,73 @@
+body {
+  background-image: linear-gradient(
+      rgba(11, 2, 26, 0.75),
+      rgba(14, 1, 32, 0.75)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  color: rgb(237, 240, 212);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: larger;
+  background-attachment: fixed;
+}
+.container {
+  margin: 0px auto 0px auto;
+  max-width: 600px;
+}
+h1 {
+  text-align: center;
+}
+#description {
+  font-style: italic;
+  text-align: center;
+}
+form {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+.form-group {
+  margin-bottom: 20px;
+  padding: 4px;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 6px 12px 6px 12px;
+  margin: 0px;
+  font-size: inherit;
+  box-sizing: border-box;
+  border-radius: 2%;
+}
+
+.input-textarea {
+  padding: 5px;
+  width: 100%;
+  height: 120px;
+  font-size: inherit;
+  resize: vertical;
+}
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  font-size: inherit;
+  background-color: rgb(64, 187, 64);
+  color: inherit;
+}
+.submit-button:hover {
+  background-color: rgb(5, 56, 11);
+  color: rgb(224, 255, 110);
+  cursor: pointer;
+}
+
+@media (max-width: 1500px) {
+  form {
+    padding: 30px;
+  }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey form</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Useless Survey form</h1>
+        <p id="description">
+          Thank you for taking the time to fill this useless form
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            required
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email"
+            >Email
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+              class="form-control"
+            />
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input
+            type="number"
+            id="age"
+            required
+            placeholder="Enter your age"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <p>Which option describes your current role?</p>
+          <select id="dropdown" class="form-control">
+            <option disabled selected value>Select current role</option>
+            <option value="student">Student</option>
+            <option value="job">full time job</option>
+            <option value="notsay">Prefer Not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Would you recommend to fill this useless form to anyone?</p>
+          <label for="definately">
+            <input
+              type="radio"
+              id="definately"
+              value="definately"
+              name="recommend"
+              checked
+            />
+            Definately
+          </label>
+          <label for="maybe">
+            <input type="radio" id="maybe" value="maybe" name="recommend" />
+            Maybe
+          </label>
+          <label><input type="radio" value="no" name="recommend" /> No</label>
+        </div>
+        <div class="form-group">
+          <p>Whats your favourite things to do?</p>
+          <select class="form-control">
+            <option disabled selected value>Choose one option</option>
+            <option value="sleeping">sleeping</option>
+            <option value="eating">Eating</option>
+            <option value="noting">Doing Nothing</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Who would you recommend to fill this useless form?</p>
+          <label>
+            <input type="checkbox" value="noone" name="who" checked /> No One
+          </label>
+          <label>
+            <input type="checkbox" value="useless" name="who" /> Useless Person
+          </label>
+          <label>
+            <input type="checkbox" value="notme" name="who" />Definately Not
+            myself
+          </label>
+        </div>
+        <div class="form-group">
+          <p>Any useless comment on this useless form?</p>
+          <textarea
+            class="input-textarea"
+            placeholder="Enter your comment"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="submit-button">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
